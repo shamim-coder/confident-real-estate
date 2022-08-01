@@ -66,7 +66,9 @@ const OurServices = () => {
         <section>
             <div className="container mx-auto py-14 text-center">
                 <div className="section-top text-center py-5 lg:w-8/12 mx-auto">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-5">Our Services & Solution</h1>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-5">
+                        Our Services <span className="text-primary">& Solution</span>
+                    </h1>
                     <p className="text-lg lg:text-xl text-neutral">
                         {location.pathname !== "/"
                             ? "Our company's main focus are towards all kinds of civil engineering aspects any kinds of development work, infrastructures for government organization as well as for any private organization related to nation building. Besides we have newly started Agro, Dairy & Fisheries to enrich the nutrition to our country with that aim we will be working for the people to provide them best service with the best solution."

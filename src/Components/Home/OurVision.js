@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 const OurVision = () => {
     return (
         <section>
-            <div class="container mx-auto min-h-screen py-24 hero">
+            <div class="container mx-auto pt-10 pb-20 hero">
                 <div class="flex flex-col lg:flex-row gap-10">
-                    <div className="w-full">
-                        <h1 class="text-5xl font-bold">
+                    <div className="w-full order-2 lg:order-1">
+                        <h1 class="text-5xl md:text-7xl font-bold">
                             Our <span className="text-primary">Vision</span>
                         </h1>
-                        <p class="py-6">We have prioritized the following key quality assurance goals</p>
+                        <p class="py-6 text-lg">We have prioritized the following key quality assurance goals</p>
                         <ul className="mb-5">
                             <li className="mb-4 font-semibold flex items-center gap-3">
                                 <FontAwesomeIcon className="text-primary mr-3" icon={faPlay} /> We aim to meet our Client Project needs at the given time and budget with highest quality possible.
@@ -35,7 +35,7 @@ const OurVision = () => {
                             Explore About Us
                         </Link>
                     </div>
-                    <img src={vision} class="w-full shadow-2xl object-cover" alt="" />
+                    <img src={vision} class="w-full shadow-2xl object-cover order-1 lg:order-2" alt="" />
                 </div>
             </div>
         </section>

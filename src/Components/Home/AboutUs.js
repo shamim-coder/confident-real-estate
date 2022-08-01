@@ -3,11 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import about from "../../Assets/about-img-1.jpg";
 import { Link } from "react-router-dom";
+import "./Home.css";
 
 const AboutUs = () => {
     return (
         <section>
-            <div class="container mx-auto min-h-screen py-24 hero">
+            <div class="container mx-auto pt-20 hero">
                 <div class="flex flex-col lg:flex-row gap-10">
                     <img src={about} class="w-full shadow-2xl" alt="" />
                     <div className="w-full">

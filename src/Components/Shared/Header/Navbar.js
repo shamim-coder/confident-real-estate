@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../../Assets/logo-w.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     return (
@@ -46,11 +48,9 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="dropdown  lg:hidden">
-                    <label tabIndex="0" className="btn  btn-primary btn-circle ">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" />
-                        </svg>
+                <div className="dropdown dropdown-end lg:hidden">
+                    <label tabIndex="0" className="p-2 cursor-pointer">
+                        <FontAwesomeIcon className="text-2xl text-white" icon={faBars} />
                     </label>
 
                     <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
@@ -59,20 +59,30 @@ const Navbar = () => {
                                 Home
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink to={"/about-us"} className="uppercase font-semibold tracking-wide">
+                                About Us
+                            </NavLink>
+                        </li>
 
                         <li>
-                            <NavLink to={"/projects"} className="text-base-100">
+                            <NavLink to={"/projects"} className="uppercase font-semibold">
                                 Our Projects
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to={"/portfolio"} className="uppercase font-semibold">
-                                Portfolio
+                            <NavLink to={"/services"} className="uppercase font-semibold">
+                                Our Services
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to={"/blog"} className="uppercase font-semibold">
-                                Blog
+                            <NavLink to={"/sister-concern"} className="uppercase font-semibold">
+                                Sister Concern
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to={"/contact-us"} className="uppercase font-semibold">
+                                Contact Us
                             </NavLink>
                         </li>
                     </ul>

@@ -6,3 +6,15 @@
     background-blend-mode: overlay;
     background-position: center;
 }
+.title {
+    position: relative;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    right: -115px;
+    width: 108px;
+    height: 33px;
+    background-color: #29b88c;
+    top: 8px;
+}

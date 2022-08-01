@@ -5,7 +5,7 @@ const AboutUs = () => {
         <section className="py-14">
             <div className="container mx-auto">
                 <div className="section-top py-5">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-5">
+                    <h1 className="text-4xl md:text-5xl font-bold mb-5 title inline-block">
                         <span className="text-primary">BRIF HISTORY</span> OF COMPANY
                     </h1>
                 </div>
