@@ -62,6 +62,8 @@ const services = [
 const OurServices = () => {
     const location = useLocation();
 
+    const showingLimitedService = location.pathname === "/" ? services.slice(0, 6) : services;
+
     return (
         <section>
             <div className="container mx-auto py-14 text-center">
@@ -77,7 +79,7 @@ const OurServices = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-10">
-                    {services.map((service) => (
+                    {showingLimitedService.map((service) => (
                         <div className="text-center shadow-lg" key={service.id}>
                             <img className="h-[250px] object-cover w-full" src={service.picture} alt="" />
                             <h3 className="text-2xl font-semibold mb-5 mt-5">{service.title}</h3>
