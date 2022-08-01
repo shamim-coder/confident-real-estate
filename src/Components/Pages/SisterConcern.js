@@ -15,14 +15,14 @@ const SisterConcern = () => {
 
             <div class="hero mb-10">
                 <div class="hero-content flex-col lg:flex-row-reverse gap-10">
-                    <div>
+                    <div className="order-2 lg:order-1">
                         <h1 class="text-5xl font-bold">Mahi Timber</h1>
                         <p class="py-6">
                             We provide every types of wood and wood furniture to the distributors. We also manufacturer all types of furniture and can provide any kinds of interior and exterior design as per clients desire and can prepare
                             accordingly.
                         </p>
                     </div>
-                    <img src={"https://i.ibb.co/9HhWFBJ/mahi-timber.jpg"} class="max-w-lg w-full rounded-lg shadow-2xl" alt="" />
+                    <img src={"https://i.ibb.co/9HhWFBJ/mahi-timber.jpg"} class="max-w-lg w-full rounded-lg shadow-2xl order-1 lg:order-2" alt="" />
                 </div>
             </div>
 
