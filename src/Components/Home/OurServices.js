@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const services = [
     {
@@ -59,14 +60,17 @@ const services = [
 ];
 
 const OurServices = () => {
+    const location = useLocation();
+
     return (
         <section>
             <div className="container mx-auto py-14 text-center">
                 <div className="section-top text-center py-5 lg:w-8/12 mx-auto">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-5">our services & solution</h1>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-5">Our Services & Solution</h1>
                     <p className="text-lg lg:text-xl text-neutral">
-                        Our company's main focus are towards all kinds of civil engineering aspects any kinds of development work, infrastructures for government organization as well as for any private organization related to nation building. Besides
-                        we have newly started Agro, Dairy & Fisheries to enrich the nutrition to our country with that aim we will be working for the people to provide them best service with the best solution.{" "}
+                        {location.pathname !== "/"
+                            ? "Our company's main focus are towards all kinds of civil engineering aspects any kinds of development work, infrastructures for government organization as well as for any private organization related to nation building. Besides we have newly started Agro, Dairy & Fisheries to enrich the nutrition to our country with that aim we will be working for the people to provide them best service with the best solution."
+                            : "Our company's main focus are towards all kinds of civil engineering aspects any kinds of development work, infrastructures for government organization as well as for any private organization related to nation building."}
                     </p>
                 </div>
 
@@ -78,9 +82,12 @@ const OurServices = () => {
                         </div>
                     ))}
                 </div>
-                <Link to="/our-services" class="btn btn-primary">
-                    Explore Service Details
-                </Link>
+
+                {location.pathname === "/" && (
+                    <Link to="/services" class="btn btn-primary">
+                        Explore Service Details
+                    </Link>
+                )}
             </div>
         </section>
     );

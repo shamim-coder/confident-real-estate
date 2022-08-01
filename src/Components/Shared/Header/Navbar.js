@@ -12,7 +12,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="hidden lg:flex">
-                    <ul className="menu menu-horizontal p-0 gap-10">
+                    <ul className="menu menu-horizontal p-0 gap-5">
                         <li>
                             <NavLink to={"/"} className="tracking-wide text-base-100">
                                 Home
@@ -25,13 +25,18 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to={"/our-projects"} className="text-base-100">
+                            <NavLink to={"/projects"} className="text-base-100">
                                 Our Projects
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to={"/our-services"} className="text-base-100">
+                            <NavLink to={"/services"} className="text-base-100">
                                 Our Services
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to={"/sister-concern"} className="text-base-100">
+                                Sister Concern
                             </NavLink>
                         </li>
                         <li>
@@ -56,8 +61,8 @@ const Navbar = () => {
                         </li>
 
                         <li>
-                            <NavLink to={"/all-products"} className="uppercase font-semibold">
-                                All Tools
+                            <NavLink to={"/projects"} className="text-base-100">
+                                Our Projects
                             </NavLink>
                         </li>
                         <li>

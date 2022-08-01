@@ -1,8 +1,6 @@
 import React from "react";
 import AboutUs from "./AboutUs";
 import Banner from "./Banner";
-import CompleteProjects from "./CompleteProjects";
-import OurInstrument from "./OurInstrument";
 import OurServices from "./OurServices";
 import OurVision from "./OurVision";
 
@@ -13,8 +11,6 @@ const Home = () => {
             <AboutUs />
             <OurServices />
             <OurVision />
-            <CompleteProjects />
-            <OurInstrument />
         </main>
     );
 };
