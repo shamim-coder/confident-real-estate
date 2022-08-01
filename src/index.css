@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Work+Sans:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+[data-theme="crcTheme"] .btn {
+    color: white;
+    font-size: 1rem;
+    padding-left: 25px;
+    padding-right: 25px;
+}
