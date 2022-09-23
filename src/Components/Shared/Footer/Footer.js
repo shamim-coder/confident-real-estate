@@ -13,7 +13,7 @@ const Footer = () => {
                     <span className="text-xl">Confident Real Estate & Construction</span> <br />
                     Providing Real Estate & Construction Service since 2013
                 </p>
-                <p>Copyright © 2022 - All right reserved</p>
+                <p>© 2022 Developed By <a href="http://shamimreza.me">Shamim Reza</a></p>
             </div>
         </footer>
     );
